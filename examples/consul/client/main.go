@@ -1,14 +1,15 @@
 package main
 
 import (
-	con_api "github.com/hashicorp/consul/api"
-	"github.com/liyue201/grpc-lb/balancer"
-	"github.com/liyue201/grpc-lb/examples/proto"
-	"github.com/liyue201/grpc-lb/registry/consul"
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
 	"log"
 	"time"
+
+	con_api "github.com/hashicorp/consul/api"
+	"github.com/leaf-rain/grpc-lb/balancer"
+	"github.com/leaf-rain/grpc-lb/examples/proto"
+	"github.com/leaf-rain/grpc-lb/registry/consul"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
 )
 
 //http://10.0.101.68:8500/v1/agent/services

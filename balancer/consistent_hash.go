@@ -2,7 +2,8 @@ package balancer
 
 import (
 	"fmt"
-	"github.com/liyue201/grpc-lb/common"
+
+	"github.com/leaf-rain/grpc-lb/common"
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/balancer/base"
 	"google.golang.org/grpc/grpclog"

@@ -4,11 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	consul "github.com/hashicorp/consul/api"
-	"github.com/liyue201/grpc-lb/registry"
-	"google.golang.org/grpc/grpclog"
 	"sync"
 	"time"
+
+	consul "github.com/hashicorp/consul/api"
+	"github.com/leaf-rain/grpc-lb/registry"
+	"google.golang.org/grpc/grpclog"
 )
 
 type Registrar struct {

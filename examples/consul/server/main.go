@@ -3,20 +3,21 @@ package main
 import (
 	"flag"
 	"fmt"
-	capi "github.com/hashicorp/consul/api"
-	"github.com/liyue201/grpc-lb/common"
-	"github.com/liyue201/grpc-lb/examples/proto"
-	"github.com/liyue201/grpc-lb/registry"
-	"github.com/liyue201/grpc-lb/registry/consul"
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/metadata"
 	"log"
 	"net"
 	"os"
 	"os/signal"
 	"sync"
 	"syscall"
+
+	capi "github.com/hashicorp/consul/api"
+	"github.com/leaf-rain/grpc-lb/common"
+	"github.com/leaf-rain/grpc-lb/examples/proto"
+	"github.com/leaf-rain/grpc-lb/registry"
+	"github.com/leaf-rain/grpc-lb/registry/consul"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/metadata"
 )
 
 var nodeID = flag.String("node", "node1", "node ID")

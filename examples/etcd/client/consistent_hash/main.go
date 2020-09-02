@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	etcd "github.com/coreos/etcd/client"
-	"github.com/liyue201/grpc-lb/balancer"
-	"github.com/liyue201/grpc-lb/examples/proto"
-	registry "github.com/liyue201/grpc-lb/registry/etcd"
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
 	"log"
 	"time"
+
+	etcd "github.com/coreos/etcd/client"
+	"github.com/leaf-rain/grpc-lb/balancer"
+	"github.com/leaf-rain/grpc-lb/examples/proto"
+	registry "github.com/leaf-rain/grpc-lb/registry/etcd"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
 )
 
 func main() {

@@ -1,13 +1,14 @@
 package balancer
 
 import (
-	"github.com/liyue201/grpc-lb/common"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/grpclog"
 	"math/rand"
 	"sync"
 	"time"
+
+	"github.com/leaf-rain/grpc-lb/common"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/balancer/base"
+	"google.golang.org/grpc/grpclog"
 )
 
 const Random = "random_x"

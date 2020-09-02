@@ -1,4 +1,4 @@
-module github.com/liyue201/grpc-lb
+module github.com/leaf-rain/grpc-lb
 
 go 1.12
 

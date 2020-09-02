@@ -2,13 +2,14 @@ package zk
 
 import (
 	"encoding/json"
-	"github.com/liyue201/grpc-lb/registry"
-	"github.com/samuel/go-zookeeper/zk"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/leaf-rain/grpc-lb/registry"
+	"github.com/samuel/go-zookeeper/zk"
+	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc/resolver"
 )
 
 type Watcher struct {

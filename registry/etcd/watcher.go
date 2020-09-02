@@ -2,12 +2,13 @@ package etcd
 
 import (
 	"encoding/json"
+	"sync"
+
 	etcd_cli "github.com/coreos/etcd/client"
-	"github.com/liyue201/grpc-lb/registry"
+	"github.com/leaf-rain/grpc-lb/registry"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/resolver"
-	"sync"
 )
 
 type Watcher struct {

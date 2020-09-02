@@ -3,13 +3,14 @@ package etcd
 import (
 	"encoding/json"
 	"fmt"
-	etcd3 "github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	"github.com/liyue201/grpc-lb/registry"
-	"golang.org/x/net/context"
-	"google.golang.org/grpc/grpclog"
 	"sync"
 	"time"
+
+	etcd3 "github.com/coreos/etcd/clientv3"
+	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
+	"github.com/leaf-rain/grpc-lb/registry"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc/grpclog"
 )
 
 type Registrar struct {

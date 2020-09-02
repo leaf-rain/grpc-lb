@@ -1,14 +1,15 @@
 package main
 
 import (
-	etcd3 "github.com/coreos/etcd/clientv3"
-	"github.com/liyue201/grpc-lb/balancer"
-	"github.com/liyue201/grpc-lb/examples/proto"
-	registry "github.com/liyue201/grpc-lb/registry/etcd3"
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
 	"log"
 	"time"
+
+	etcd3 "github.com/coreos/etcd/clientv3"
+	"github.com/leaf-rain/grpc-lb/balancer"
+	"github.com/leaf-rain/grpc-lb/examples/proto"
+	registry "github.com/leaf-rain/grpc-lb/registry/etcd3"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
 )
 
 func main() {

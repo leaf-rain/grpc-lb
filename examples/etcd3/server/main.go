@@ -3,14 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	etcdv3 "github.com/coreos/etcd/clientv3"
-	"github.com/liyue201/grpc-lb/common"
-	"github.com/liyue201/grpc-lb/examples/proto"
-	"github.com/liyue201/grpc-lb/registry"
-	"github.com/liyue201/grpc-lb/registry/etcd3"
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/metadata"
 	"log"
 	"net"
 	"os"
@@ -18,6 +10,15 @@ import (
 	"sync"
 	"syscall"
 	"time"
+
+	etcdv3 "github.com/coreos/etcd/clientv3"
+	"github.com/leaf-rain/grpc-lb/common"
+	"github.com/leaf-rain/grpc-lb/examples/proto"
+	"github.com/leaf-rain/grpc-lb/registry"
+	"github.com/liyue201/grpc-lb/registry/etcd"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/metadata"
 )
 
 var nodeID = flag.String("node", "node1", "node ID")
