@@ -15,7 +15,7 @@ import (
 	"github.com/leaf-rain/grpc-lb/common"
 	"github.com/leaf-rain/grpc-lb/examples/proto"
 	"github.com/leaf-rain/grpc-lb/registry"
-	"github.com/liyue201/grpc-lb/registry/etcd"
+	"github.com/leaf-rain/grpc-lb/registry/etcd"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"

@@ -19,7 +19,6 @@ require (
 	github.com/hashicorp/consul/api v1.3.0
 	github.com/jonboulle/clockwork v0.1.0 // indirect
 	github.com/json-iterator/go v1.1.9 // indirect
-	github.com/liyue201/grpc-lb v0.0.0-20200901081538-e471cb60979d
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_golang v1.3.0 // indirect
 	github.com/samuel/go-zookeeper v0.0.0-20190923202752-2cc03de413da
